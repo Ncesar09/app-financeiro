@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6a2c91">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Controle Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Controle Financeiro</h1></header>
+
+  <main>
+    <!-- TELA 1: LANÇAR -->
+    <section id="tela-lancar" class="tela ativa">
+      <h2>Novo lançamento</h2>
+      <form id="form" autocomplete="off">
+        <div class="tipo">
+          <label class="op entrada"><input type="radio" name="tipo" value="in" checked><span>Entrada</span></label>
+          <label class="op saida"><input type="radio" name="tipo" value="out"><span>Despesa</span></label>
+        </div>
+        <label>Data
+          <input type="date" id="data" required>
+        </label>
+        <label>Descrição
+          <input type="text" id="desc" maxlength="80" required>
+        </label>
+        <label>Valor (R$)
+          <input type="text" id="valor" inputmode="decimal" placeholder="0,00" required>
+        </label>
+        <button type="submit" class="principal">Salvar lançamento</button>
+      </form>
+      <p id="aviso" role="status"></p>
+    </section>
+
+    <!-- TELA 2: MÊS -->
+    <section id="tela-mes" class="tela">
+      <div class="nav-mes">
+        <button type="button" id="mes-ant" aria-label="Mês anterior">‹</button>
+        <h2 id="mes-titulo"></h2>
+        <button type="button" id="mes-prox" aria-label="Próximo mês">›</button>
+      </div>
+      <div class="cartoes">
+        <div class="cartao"><small>Saldo inicial</small><strong id="m-ini"></strong></div>
+        <div class="cartao in"><small>Entradas</small><strong id="m-ent"></strong></div>
+        <div class="cartao out"><small>Saídas</small><strong id="m-sai"></strong></div>
+        <div class="cartao"><small>Saldo final</small><strong id="m-fim"></strong></div>
+      </div>
+      <ul id="lista"></ul>
+      <p id="vazio" class="vazio" hidden>Nenhum lançamento neste mês.</p>
+    </section>
+
+    <!-- TELA 3: RESUMO -->
+    <section id="tela-resumo" class="tela">
+      <div class="nav-mes">
+        <button type="button" id="ano-ant" aria-label="Ano anterior">‹</button>
+        <h2 id="ano-titulo"></h2>
+        <button type="button" id="ano-prox" aria-label="Próximo ano">›</button>
+      </div>
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th>Mês</th><th>Entradas</th><th>Saídas</th><th>Saldo final</th></tr></thead>
+          <tbody id="tabela-resumo"></tbody>
+        </table>
+      </div>
+      <h3>Receitas vs. Despesas</h3>
+      <canvas id="grafico" height="260"></canvas>
+      <p class="legenda"><span class="bolinha in"></span> Entradas &nbsp; <span class="bolinha out"></span> Saídas</p>
+    </section>
+
+    <!-- TELA 4: AJUSTES -->
+    <section id="tela-ajustes" class="tela">
+      <h2>Ajustes</h2>
+      <label>Saldo inicial (R$)
+        <input type="text" id="saldo-ini" inputmode="decimal" placeholder="0,00">
+      </label>
+      <button type="button" id="salvar-saldo" class="secundario">Salvar saldo inicial</button>
+
+      <h3>Cópia de segurança</h3>
+      <p class="ajuda">Os dados ficam só neste aparelho. Exporte uma cópia de vez em quando.</p>
+      <button type="button" id="exportar" class="secundario">Exportar cópia (.json)</button>
+      <label class="arquivo secundario">Importar cópia
+        <input type="file" id="importar" accept="application/json,.json" hidden>
+      </label>
+      <p class="ajuda" id="contagem"></p>
+    </section>
+  </main>
+
+  <nav>
+    <button type="button" data-tela="lancar" class="ativa">Lançar</button>
+    <button type="button" data-tela="mes">Mês</button>
+    <button type="button" data-tela="resumo">Resumo</button>
+    <button type="button" data-tela="ajustes">Ajustes</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

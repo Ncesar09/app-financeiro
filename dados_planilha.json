@@ -1,0 +1,173 @@
+{
+  "saldoInicial": 0,
+  "lancamentos": [
+    {
+      "id": "planilha-mar-3-in",
+      "data": "2026-03-28",
+      "desc": "Doação do vetreador Rodrigo Borguetti",
+      "tipo": "in",
+      "valor": 20000
+    },
+    {
+      "id": "planilha-abr-3-in",
+      "data": "2026-04-11",
+      "desc": "1° pix rifa",
+      "tipo": "in",
+      "valor": 200000
+    },
+    {
+      "id": "planilha-abr-4-out",
+      "data": "2026-04-20",
+      "desc": "saida papelaria",
+      "tipo": "out",
+      "valor": 12765
+    },
+    {
+      "id": "planilha-abr-5-in",
+      "data": "2026-04-24",
+      "desc": "2° pix rifa camisetas",
+      "tipo": "in",
+      "valor": 200000
+    },
+    {
+      "id": "planilha-abr-6-in",
+      "data": "2026-04-25",
+      "desc": "Doação Edilson",
+      "tipo": "in",
+      "valor": 1000
+    },
+    {
+      "id": "planilha-abr-7-in",
+      "data": "2026-04-27",
+      "desc": "Doação Marilde Prigol",
+      "tipo": "in",
+      "valor": 2000
+    },
+    {
+      "id": "planilha-abr-8-out",
+      "data": "2026-04-29",
+      "desc": "das camisetas",
+      "tipo": "out",
+      "valor": 156380
+    },
+    {
+      "id": "planilha-abr-9-out",
+      "data": "2026-04-25",
+      "desc": "PAPEL A4 CARLA",
+      "tipo": "out",
+      "valor": 3600
+    },
+    {
+      "id": "planilha-mai-3-in",
+      "data": "2026-05-08",
+      "desc": "Pix Rifa pagamento",
+      "tipo": "in",
+      "valor": 238500
+    },
+    {
+      "id": "planilha-mai-4-out",
+      "data": "2026-05-08",
+      "desc": "documentos cartorio",
+      "tipo": "out",
+      "valor": 24297
+    },
+    {
+      "id": "planilha-mai-5-out",
+      "data": "2026-05-08",
+      "desc": "2° parcela camiseta",
+      "tipo": "out",
+      "valor": 156380
+    },
+    {
+      "id": "planilha-mai-6-in",
+      "data": "2026-05-05",
+      "desc": "DOAÇÃO VEREADORES",
+      "tipo": "in",
+      "valor": 10000
+    },
+    {
+      "id": "planilha-mai-7-in",
+      "data": "2026-05-12",
+      "desc": "VENDA DOS PRODUTOS BRINDES",
+      "tipo": "in",
+      "valor": 3700
+    },
+    {
+      "id": "planilha-mai-8-out",
+      "data": "2026-05-11",
+      "desc": "PAGAMENTO VIABILIDADE ANDRESSA",
+      "tipo": "out",
+      "valor": 20000
+    },
+    {
+      "id": "planilha-mai-9-out",
+      "data": "2026-05-11",
+      "desc": "PGMENTO CONTABILIDADEPARA CNPJ",
+      "tipo": "out",
+      "valor": 30000
+    },
+    {
+      "id": "planilha-mai-10-out",
+      "data": "2026-05-19",
+      "desc": "COTA CAPITAL SICOOB",
+      "tipo": "out",
+      "valor": 15000
+    },
+    {
+      "id": "planilha-mai-11-in",
+      "data": "2026-05-22",
+      "desc": "CONTRIBUIÇÕES",
+      "tipo": "in",
+      "valor": 45000
+    },
+    {
+      "id": "planilha-jul-3-in",
+      "data": "2026-07-01",
+      "desc": "CONTRIBUIÇÕES DE JULHO",
+      "tipo": "in",
+      "valor": 46000
+    },
+    {
+      "id": "planilha-jul-4-out",
+      "data": "2026-07-07",
+      "desc": "PAGAMENTOSAL DAS LEMBRANCINHAS",
+      "tipo": "out",
+      "valor": 6225
+    },
+    {
+      "id": "planilha-jul-5-out",
+      "data": "2026-07-09",
+      "desc": "PAGAMENTO TRIBUTOS FEDEREAIS",
+      "tipo": "out",
+      "valor": 10000
+    },
+    {
+      "id": "planilha-ago-3-out",
+      "data": "2026-08-05",
+      "desc": "FUNDO MNICIPAL DASAUDE",
+      "tipo": "out",
+      "valor": 20459
+    },
+    {
+      "id": "planilha-ago-4-out",
+      "data": "2026-08-05",
+      "desc": "PREFEITURA ALVARA",
+      "tipo": "out",
+      "valor": 28324
+    },
+    {
+      "id": "planilha-ago-5-in",
+      "data": "2026-08-05",
+      "desc": "CONTRIBUICÕES",
+      "tipo": "in",
+      "valor": 21500
+    },
+    {
+      "id": "planilha-set-3-out",
+      "data": "2026-09-21",
+      "desc": "pgto banner",
+      "tipo": "out",
+      "valor": 10500
+    }
+  ]
+}
