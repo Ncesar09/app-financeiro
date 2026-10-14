@@ -1,10 +1,10 @@
-{
+ador{
   "saldoInicial": 0,
   "lancamentos": [
     {
       "id": "planilha-mar-3-in",
       "data": "2026-03-28",
-      "desc": "Doação do vetreador Rodrigo Borguetti",
+      "desc": "Doação do vereador Rodrigo Borguetti",
       "tipo": "in",
       "valor": 20000
     },
